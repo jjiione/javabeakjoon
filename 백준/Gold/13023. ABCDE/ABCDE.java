@@ -30,6 +30,8 @@ public class Main {
             visited = new boolean[N];
             if(!flag)
                 dfs(i, 1);
+            else
+                break;
         }
 
         if(!flag)
