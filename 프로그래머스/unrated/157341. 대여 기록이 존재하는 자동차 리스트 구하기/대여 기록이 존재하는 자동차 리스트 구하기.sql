@@ -1,0 +1,6 @@
+-- 코드를 입력하세요
+SELECT distinct h.CAR_ID
+FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY h join CAR_RENTAL_COMPANY_CAR c
+on h.CAR_ID = c.CAR_ID
+where c.CAR_TYPE = '세단' and h.START_DATE like '2022-10-%'
+ORDER BY c.CAR_ID desc
